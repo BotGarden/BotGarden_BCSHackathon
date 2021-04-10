@@ -1,0 +1,7 @@
+{
+    "prefix": "!askBCS",
+    "commands": [
+        "members",
+        "ping"
+    ]
+}
