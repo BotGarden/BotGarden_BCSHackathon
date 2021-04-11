@@ -7,7 +7,7 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 let allProperties: any = {
-    token: process.env.NEWBOT_TOKEN,
+    token: process.env.ASKTABOT_TOKEN,
     prefix: properties.prefix,
     commands: properties.commands,
     botDirName: path.basename(__dirname),
