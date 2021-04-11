@@ -7,7 +7,7 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 let allProperties: any = {
-    token: "ODMwNTc0OTA3NDA1NTAwNTE2.YHIrKQ.RqqrV_jdKaTqZ8KLGTrJlI0we8o",
+    token: process.env.ASKBCSBOT_TOKEN,
     prefix: properties.prefix,
     commands: properties.commands,
     botDirName: path.basename(__dirname),
