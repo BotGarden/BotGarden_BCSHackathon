@@ -1,0 +1,26 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - rel
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "bcshackathon" #Must be unique in Heroku
+          heroku_email: "erickim195@gmail.com"
+          userdocker: true
+          docker_build_args: |
+            NODE_ENV
+            ASKBCSBOT_TOKEN
+            ASKTABOT_TOKEN
+          env:
+            NODE_ENV: production
+            ASKBCSBOT_TOKEN: ${{ secrets.ASKBCSBOT_TOKEN }}
+            ASKTABOT_TOKEN: ${{ secrets.ASKTABOT_TOKEN }}
