@@ -21,6 +21,6 @@ jobs:
             ASKBCSBOT_TOKEN_ARG
             ASKTABOT_TOKEN_ARG
         env:
-          NODE_ENV: production
-          ASKBCSBOT_TOKEN: ${{ secrets.ASKBCSBOT_TOKEN }}
-          ASKTABOT_TOKEN: ${{ secrets.ASKTABOT_TOKEN }}
+          NODE_ENV_ARG: production
+          ASKBCSBOT_TOKEN_ARG: ${{ secrets.ASKBCSBOT_TOKEN }}
+          ASKTABOT_TOKEN_ARG: ${{ secrets.ASKTABOT_TOKEN }}
