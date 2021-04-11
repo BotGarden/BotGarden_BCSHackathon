@@ -20,7 +20,7 @@ jobs:
             NODE_ENV
             ASKBCSBOT_TOKEN
             ASKTABOT_TOKEN
-          env:
-            NODE_ENV: production
-            ASKBCSBOT_TOKEN: ${{ secrets.ASKBCSBOT_TOKEN }}
-            ASKTABOT_TOKEN: ${{ secrets.ASKTABOT_TOKEN }}
+        env:
+          NODE_ENV: production
+          ASKBCSBOT_TOKEN: ${{ secrets.ASKBCSBOT_TOKEN }}
+          ASKTABOT_TOKEN: ${{ secrets.ASKTABOT_TOKEN }}
