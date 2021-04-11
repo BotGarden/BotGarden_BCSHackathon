@@ -2,7 +2,11 @@ FROM node
 
 # Create app directory
 WORKDIR /usr/app
-# ENV NODE_ENV production
+
+# Define env variables, These would be overwritten
+ENV NODE_ENV production
+ENV ASKBCSBOT_TOKEN default
+ENV ASKTABOT_TOKEN default
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
