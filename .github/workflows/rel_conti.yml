@@ -17,9 +17,9 @@ jobs:
           heroku_email: ${{ secrets.HEROKU_APP_EMAIL }}
           usedocker: true
           docker_build_args: |
-            NODE_ENV
-            ASKBCSBOT_TOKEN
-            ASKTABOT_TOKEN
+            NODE_ENV_ARG
+            ASKBCSBOT_TOKEN_ARG
+            ASKTABOT_TOKEN_ARG
         env:
           NODE_ENV: production
           ASKBCSBOT_TOKEN: ${{ secrets.ASKBCSBOT_TOKEN }}
